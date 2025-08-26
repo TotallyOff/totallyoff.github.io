@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Totally Off</title>
+<meta name="description" content="Totally Off — Artist Portfolio">
+<link rel="preconnect" href="https://cdn.myportfolio.com">
+<link rel="preconnect" href="https://open.spotify.com">
+<link rel="preconnect" href="https://www.youtube.com">
+<link rel="stylesheet" href="assets/site.css">
+<body>
+<div class="clouds" aria-hidden="true"></div>
+<header class="header">
+  <div class="header-inner container">
+    <a class="logo" href="index.html" aria-label="Totally Off Home">
+      <em>Keep Creating</em>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="music.html">Music</a>
+      <a href="interviews.html">Press</a>
+      <a href="paintings.html">Paintings</a>
+      <a href="digital.html">Digital</a>
+      <a href="3d.html">3D</a>
+      <a href="prints.html">Printed</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="drawer">
+  <div class="drawer-panel">
+    <a href="index.html">Home</a>
+    <a href="music.html">Music</a>
+    <a href="interviews.html">Press</a>
+    <a href="paintings.html">Paintings</a>
+    <a href="digital.html">Digital</a>
+    <a href="3d.html">3D</a>
+    <a href="prints.html">Printed</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<section class="hero container hero-inner">
+  <h1>Contact</h1>
+  <p>Use the form below — your message goes to <strong>contacttotallyoff@gmail.com</strong>.</p>
+</section>
+<section class="section container">
+  <div class="grid">
+    <article class="card" style="grid-column:span 12">
+      <div class="pad">
+        <form data-contact>
+          <p><label>Name<br><input name="name" required style="width:100%;padding:12px;border:1px solid #ddd;border-radius:12px"></label></p>
+          <p><label>Email<br><input name="email" type="email" required style="width:100%;padding:12px;border:1px solid #ddd;border-radius:12px"></label></p>
+          <p><label>Message<br><textarea name="message" rows="6" required style="width:100%;padding:12px;border:1px solid #ddd;border-radius:12px"></textarea></label></p>
+          <p class="small">We'll never share your email.</p>
+          <p><button style="padding:12px 16px;border-radius:12px;border:1px solid #111;background:#111;color:#fff">Send</button></p>
+        </form>
+      </div>
+    </article>
+  </div>
+</section>
+<footer class="container">
+  <div class="cols">
+    <div>
+      <div class="badge"><strong>TOTALLY OFF</strong> — Artist · Designer · Musician</div>
+      <p class="small">© <span id="yr"></span> Totally Off. All rights reserved.</p>
+    </div>
+    <div class="small">
+      <a href="mailto:contacttotallyoff@gmail.com">contacttotallyoff@gmail.com</a>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent = new Date().getFullYear()</script>
+<script src="assets/site.js" defer></script>
+</body></html>

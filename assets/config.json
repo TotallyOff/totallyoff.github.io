@@ -1,0 +1,28 @@
+{
+  "spotify_artist": "https://open.spotify.com/artist/4hC579UQmDxmRJgwKrgWMr",
+  "spotify_albums": [
+    "https://open.spotify.com/album/6s8dhm6lMeayB3pWHLbI6C",
+    "https://open.spotify.com/album/4XfgGI7VLQKpfpSu5SGxwC",
+    "https://open.spotify.com/album/0c5dBnxYoSLgueSccAQTyk",
+    "https://open.spotify.com/album/4Jywr1z3yqYUK6BcOKAeYS"
+  ],
+  "album_titles": [
+    "Cycles",
+    "Off Record", 
+    "Wasteland",
+    "Life We Live"
+  ],
+  "youtube_hometown_heroes": "https://www.youtube.com/watch?v=GLG3hG9lmac",
+  "youtube_satchel_dave_tape": "https://www.youtube.com/watch?v=IEFTLWSvmOU",
+
+  "socials": {
+    "instagram": "https://www.instagram.com/totally.off/",
+    "tiktok": "https://www.tiktok.com/@totallyoff",
+    "youtube": "https://www.youtube.com/@TotallyOff/videos",
+    "spotify": "https://open.spotify.com/artist/4hC579UQmDxmRJgwKrgWMr",
+    "apple_music": "https://music.apple.com/artist/totally-off/1234567890",
+    "youtube_music": "https://music.youtube.com/channel/UCxxxxx",
+    "soundcloud": "https://soundcloud.com/totallyoff",
+    "bandcamp": "https://totallyoff.bandcamp.com/music"
+  }
+}

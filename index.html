@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Totally Off — Portfolio</title>
+<meta name="description" content="Artist & designer: painting, digital, 3D, prints, and music.">
+<link rel="preconnect" href="https://cdn.myportfolio.com">
+<link rel="preconnect" href="https://open.spotify.com">
+<link rel="preconnect" href="https://www.youtube.com">
+<link rel="stylesheet" href="assets/site.css">
+<body class="">
+<div class="clouds" aria-hidden="true"></div>
+<header class="header">
+  <div class="header-inner container">
+    <a class="logo" href="index.html" aria-label="Totally Off Home">
+      <em>Keep Creating</em>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="music.html">Music</a>
+      <a href="interviews.html">Press</a>
+      <a href="paintings.html">Paintings</a>
+      <a href="digital.html">Digital</a>
+      <a href="3d.html">3D</a>
+      <a href="prints.html">Printed</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="drawer">
+  <div class="drawer-panel">
+    <a href="index.html">Home</a>
+    <a href="music.html">Music</a>
+    <a href="interviews.html">Press</a>
+    <a href="paintings.html">Paintings</a>
+    <a href="digital.html">Digital</a>
+    <a href="3d.html">3D</a>
+    <a href="prints.html">Printed</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<section class="hero container hero-inner">
+  <h1>Totally Off</h1>
+  <p>Paintings, digital work, 3D studies, printed designs, artist interviews, and music.</p>
+</section>
+
+<section class="section container">
+  <h2>Featured Music</h2>
+  <div class="grid">
+    <article class="card" style="grid-column:span 6">
+      <div class="pad"><h3>Cycles (EP)</h3><p class="small"></p></div>
+      <div id="album1" class="embed"></div>
+    </article>
+    <article class="card" style="grid-column:span 6">
+      <div class="pad"><h3>Off Record</h3></div>
+      <div id="album2" class="embed"></div>
+    </article>
+  </div>
+</section>
+
+<section class="section container">
+  <h2>Mixtapes</h2>
+  <div class="grid">
+    <article class="card" style="grid-column:span 6">
+      <div class="pad"><h3>Satchel Dave Tape</h3></div>
+      <div id="ytB" class="embed"></div>
+    </article>
+    <article class="card" style="grid-column:span 6">
+      <div class="pad"><h3>Hometown Heroes</h3></div>
+      <div id="ytA" class="embed"></div>
+    </article>
+  </div>
+</section>
+
+<section class="section container">
+  <h2>Latest Art</h2>
+  <div id="latest-grid" class="art-grid"></div>
+</section>
+
+<section class="section container">
+  <h2>Artist Interviews</h2>
+  <div id="press-list" class="grid"></div>
+</section>
+<footer class="container">
+  <div class="cols">
+    <div>
+      <div class="badge"><strong>TOTALLY OFF</strong> — Artist · Designer · Musician</div>
+      <p class="small">© <span id="yr"></span> Totally Off. All rights reserved.</p>
+    </div>
+    <div id="socials" class="small"></div>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent = new Date().getFullYear()</script>
+<script src="assets/site.js" defer></script>
+</body></html>
