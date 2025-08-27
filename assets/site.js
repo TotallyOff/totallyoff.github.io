@@ -171,29 +171,31 @@ async function renderMusic(){
   const res = await fetch('assets/config.json');
   const cfg = await res.json();
 
-  const albums = cfg.spotify_albums || [];
+  const albums = cfg.youtube_albums || [];
+  const titles = cfg.album_titles || [];
   
-  // Spotify embeder
-  const createSpotifyEmbed = (url) => {
-    if (!url || !url.includes('/album/')) return '';
-    const albumId = url.split('/album/')[1]?.split('?')[0];
-    return `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/${albumId}" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`;
-  };
+  // For index page - show Cycles and Off Record YouTube videos
+  if (album1 && albums[0]) {
+    await embedYouTubeWithFallback(album1, albums[0], titles[0] || "Cycles");
+  }
+  if (album2 && albums[1]) {
+    await embedYouTubeWithFallback(album2, albums[1], titles[1] || "Off Record");
+  }
 
-  // For index page - show Cycles (album1) and Off Record (album2)
-  if (album1 && albums[0]) album1.innerHTML = createSpotifyEmbed(albums[0]); // Cycles
-  if (album2 && albums[1]) album2.innerHTML = createSpotifyEmbed(albums[1]); // Off Record
-
-  // For music page - show all albums
-  if (album3 && albums[1]) album3.innerHTML = createSpotifyEmbed(albums[1]); // Off Record
-  if (album4 && albums[3]) album4.innerHTML = createSpotifyEmbed(albums[3]); // Life We Live
+  // For music page - show all album YouTube videos
+  if (album3 && albums[1]) {
+    await embedYouTubeWithFallback(album3, albums[1], titles[1] || "Off Record");
+  }
+  if (album4 && albums[3]) {
+    await embedYouTubeWithFallback(album4, albums[3], titles[3] || "New Era Debut Album");
+  }
 
   // If we're on music page, also set Wasteland for album2
   if (document.title.includes('Music') && album2 && albums[2]) {
-    album2.innerHTML = createSpotifyEmbed(albums[2]); // Wasteland for music page
+    await embedYouTubeWithFallback(album2, albums[2], titles[2] || "Wasteland");
   }
 
-  // YouTube videos with API-backed fallback
+  // Mixtape videos
   if (ytA && cfg.youtube_hometown_heroes) {
     await embedYouTubeWithFallback(ytA, cfg.youtube_hometown_heroes, "Hometown Heroes");
   }
