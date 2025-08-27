@@ -1,27 +1,26 @@
 {
   "spotify_artist": "https://open.spotify.com/artist/4hC579UQmDxmRJgwKrgWMr",
-  "spotify_albums": [
-    "https://open.spotify.com/album/6s8dhm6lMeayB3pWHLbI6C",
-    "https://open.spotify.com/album/4XfgGI7VLQKpfpSu5SGxwC",
-    "https://open.spotify.com/album/0c5dBnxYoSLgueSccAQTyk",
-    "https://open.spotify.com/album/4Jywr1z3yqYUK6BcOKAeYS"
+  "youtube_albums": [
+    "https://www.youtube.com/watch?v=AaTUZM6GZQc",
+    "https://www.youtube.com/watch?v=xaQsPzeeIjw", 
+    "https://www.youtube.com/watch?v=oz6aNiR3jGU",
+    "https://www.youtube.com/watch?v=2joO2oee9mk"
   ],
   "album_titles": [
     "Cycles",
     "Off Record", 
     "Wasteland",
-    "Life We Live"
+    "New Era Debut Album"
   ],
   "youtube_hometown_heroes": "https://www.youtube.com/watch?v=GLG3hG9lmac",
   "youtube_satchel_dave_tape": "https://www.youtube.com/watch?v=IEFTLWSvmOU",
-
   "socials": {
     "instagram": "https://www.instagram.com/totally.off/",
     "tiktok": "https://www.tiktok.com/@totallyoff",
     "youtube": "https://www.youtube.com/@TotallyOff/videos",
     "spotify": "https://open.spotify.com/artist/4hC579UQmDxmRJgwKrgWMr",
-    "apple_music": "https://music.apple.com/artist/totally-off/1234567890",
-    "youtube_music": "https://music.youtube.com/channel/UCxxxxx",
+    "apple_music": "https://music.apple.com/us/artist/totally-off/1619040851",
+    "youtube_music": "https://music.youtube.com/channel/UCx00vgJ_7zEu-FAE4BjOPYQ",
     "soundcloud": "https://soundcloud.com/totallyoff",
     "bandcamp": "https://totallyoff.bandcamp.com/music"
   }
